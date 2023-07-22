@@ -1,0 +1,5 @@
+package JavaProjects;
+
+class waqqas {
+    
+}
