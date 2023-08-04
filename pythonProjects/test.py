@@ -1,73 +1,110 @@
-import time
+# salary = 100 + 50 + \
+#           60 + 70 + 400 
+# salary = (10 + 12 + 14
+#           + 11 
+          
+          
+          
+# #           + 15 )
 
-from selenium import webdriver
+# wives = ("mary" + " zahraa" +
+#         " dana" + " alaa")
+# print(int(0x41414141))
+# n21= bin(1094795585)
+# print(n21)
+# print(wives)
 
-from simon.accounts.pages import LoginPage
-from simon.chat.pages import ChatPage
-from simon.chats.pages import PanePage
-from simon.header.pages import HeaderPage
+# # Name = 10 
+# name = 12
+# NAME = 13
+# NAme = 24
+# print(
+# id(name),
+# id(Name),
+# id(NAme)
+# )
 
+# waqqas = 19 ; hashem = 18 
 
-# Creating the driver (browser)
-driver = webdriver.Firefox()
-driver.maximize_window()
+# print(waqqas,hashem)
 
-# Login
-#       and uncheck the remember check box
-#       (Get your phone ready to read the QR code)
-login_page = LoginPage(driver)
-login_page.load()
-time.sleep(7)
+# if waqqas > hashem : 
+#    print(waqqas)
+# i= 0 
+# while i <= 10 :
+#     print(i) 
+#     i+=1 
+# hashem = 12 
+# waqqas = 13 
+# whab = 2 
+# cinma = 4.7 
+# if whab >= cinma : 
+#     print("welcom") pass 
+# else:
+#     print("go out ")
+# def sup(x,y) :
+#     return x +  y 
 
+# res = sup(12,45)
+# # print(res)
+# # import datetime 
 
-# 1. Get all opened chats
-#       opened chats are the one chats or conversations
-#       you already have in your whatsapp.
-#       IT WONT work if you are looking for a contact
-#       you have never started a conversation.
-pane_page = PanePage(driver)
+# # The_Time = datetime.datetime.now()
+# # Correct_Time = The_Time.strftime("%d/%m/%Y   %I:%M")
 
-# get all chats
-opened_chats = pane_page.opened_chats
+# # print(Correct_Time)
+    
+# # NAME = "Waqqa"
+# # NAME ="asssd"
+# # print(NAME) 
+# print(0b011)
+ 
+#  #string 
+# name = "waqqas"
+# name = str("ali")
+# #int
+# age = 18 
+# age = int(19)
+# #float 
+# salary= 1000.676
+# salary= float(1098.23)
+# #bool 
+# a = True
+# b = False
+# #complex
+# mycomplex =  12 + 9j
+# comp = complex(10)
+# #list
+# id = ["waqqas",18,96.4,True]
+# id2= list(["hashem","polythinic",19,80.13 , False])
+# #dict
+# id1 = {"name":"waqqas","age":18,"gpa":96.4}
+# id3 = dict({"name":"waqqas","age":18,"gpa":96.4})
+# #tuple
+# WTT = ("waqqsa","hamed",10,10.8,True)
+# n= tuple(("mohammad",26,True))
+# #set 
+# s= {"w",12,10.4,12+4j}
+# se = set({"g",12,34.5,a+12j})
+# #byte
+# n = bytes(12)
+# h= bytearray(8)
+# print(h)
 
-# iterating over them
-for oc in opened_chats:
-    print(oc.name)  # contact name (as appears on your whatsapp)
-    print(oc.icon)  # the url of the image
-    print(oc.last_message)
-    print(oc.last_message_time)  # datetime object
-    print(oc.has_notifications())  # are there unread messages?
-    print(oc.notifications)  # returns a integer with the qty of new messages, if there are.
+from pytube import YouTube
 
+# تحديد رابط الفيديو
+url = 'https://youtube.com/shorts/0-5E46CaTsw?feature=share'
 
-# 2. Go into the chat
-#       just click on one to open the chat page
-#       (where the conversation is happening)
-first_chat = opened_chats[0]
-first_chat.click()
+# إنشاء كائن YouTube
+yt = YouTube(url)
 
-# 3. Read the last 10 messages from your contact
-chat_page = ChatPage(driver)
-msgs = chat_page.messages.newest(10, filterby='contact')
+# تحديد الجودة المناسبة
+# يمكن الحصول على قائمة الجودات المتاحة باستخدام:
+yt.streams.all()
+stream = yt.streams.filter(progressive=True, file_extension='mp4').order_by('resolution').desc().first()
 
-for msg in msgs:
-    print(msg.contact) # name (all should be the same)
-    print(msg.date)
-    print(msg.text)
-    print(msg.status)
-
-
-# 4. Reply to the most recent message
-msg = msgs[0]  # get the first of the messages query done in previous step
-msg = chat_page.messages.newest(filterby='contact')
-# Be careful as library can only now reply to text message
-# Replying to a msg type (video, image, giff, etc) is not implemented yet. 
-msg.reply("This a reply to a specific text msg.")
-
-
-# Logout
-header_page = HeaderPage(driver)
-header_page.logout()
-
-# Close the browser
-driver.quit()
+# بدء التنزيل
+print('Downloading...')
+stream.download(output_path='downloads', filename=f'{yt.title}.mp4')
+print('Download complete!')

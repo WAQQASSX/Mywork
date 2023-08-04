@@ -1,8 +1,7 @@
 def oparritars():
     Num = [10 , 10 , 12 , 5 , 2 , 40 , 3]
     str0 = ["sjad", "ali","hassin","sayed","radah"]
-
-    add = Num[0] + Num[1] # = 20
+    add = Num[0] + Num[1] # = 20\
     sub = Num[2] - Num[0] # = 2 
     div = Num[0] / Num[3]# = 2.0
     fdiv = Num[0] // Num[1] # = 1
@@ -12,26 +11,28 @@ def oparritars():
     addN = str0[1] + " " + str0[2] # = ali hassin
     math = [add,sub,div,fdiv,remDiv,mul,Pow,addN]
 
+    # in  or not in 
+    str0 = ["sjad", "ali","hassin","sayed","radah"]
     def mp():
-        if "hashim"  not in str0 :
+        if "hashem" in str0 :
             print("true")
         else :
             print("false")
             # true 
-        if "ali" in str0 :
+        if "ali" not in str0 :
             print("true")
         else :
             print("false")
             # true 
-
+        
+        # is or is not  
     def idd() :
         if Num[0] is  Num[1] :
             print("yes" ,'\n',  id(Num[0]), id(Num[1]))
-            
         else :
             print("no")
             # yes 
-        if Num[0] is Num[2]:
+        if Num[0]  is not  Num[2]:
             print("yes")
         else :
             print("no")
