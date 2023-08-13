@@ -1,5 +1,0 @@
-package JavaProjects;
-
-class waqqas {
-    
-}

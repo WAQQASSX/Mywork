@@ -91,20 +91,18 @@
 # h= bytearray(8)
 # print(h)
 
+# from pytube import YouTube
+# url = 'https://youtube.com/shorts/0-5E46CaTsw?feature=share'
+# yt = YouTube(url)
+# stream = yt.streams.filter(progressive=True, file_extension='mp4').order_by('resolution').desc().first()
+# print('Downloading...')
+# stream.download(output_path='downloads', filename=f'{yt.title}.mp4')
+# print('Download complete!')
+
 from pytube import YouTube
-
-# تحديد رابط الفيديو
-url = 'https://youtube.com/shorts/0-5E46CaTsw?feature=share'
-
-# إنشاء كائن YouTube
+url = input(" youtube link \n")
 yt = YouTube(url)
-
-# تحديد الجودة المناسبة
-# يمكن الحصول على قائمة الجودات المتاحة باستخدام:
-yt.streams.all()
 stream = yt.streams.filter(progressive=True, file_extension='mp4').order_by('resolution').desc().first()
-
-# بدء التنزيل
 print('Downloading...')
 stream.download(output_path='downloads', filename=f'{yt.title}.mp4')
 print('Download complete!')
