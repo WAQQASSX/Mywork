@@ -21,12 +21,10 @@ public class new1 {
 }
 // tax calculator
 
-public class new2 {
+public class new2{
  public static void main(String[] args) {
     int tax = 10000;
     System.out.println(tax);
  }
     
 }
-
-public class new3 { \\\\\\\
