@@ -7,6 +7,7 @@ public static void main(String[] args) {
     System.out.println("Enter your name : ");
     String name = Myinput.nextLine();
     System.out.println("Hello " + name);
+    Myinput.close();
 } 
 }
     

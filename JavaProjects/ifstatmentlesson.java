@@ -12,6 +12,7 @@ public static void main(String[] args) {
     }else {
         System.out.println("you don't have  permission to join ");
     }
+    input.close();
 }
     
 }
@@ -29,6 +30,7 @@ class if_statmentlesson2 {
         }else {
             System.out.println("you don't have  permission to join ");
         }
+        StdInput.close();
 }
 }
 // short form 
@@ -41,7 +43,7 @@ public static void main(String[] args) {
     String age = (age1 >= 18) ? "you have access" : "you don't have permission to join";
     System.out.println(age);
     
-    
+    iput.close();
 }
     
 }

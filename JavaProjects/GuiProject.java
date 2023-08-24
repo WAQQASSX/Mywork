@@ -19,6 +19,7 @@ public static void main(String[] args) {
         String password1 = JOptionPane.showInputDialog("Enter your password: ");
         JOptionPane.showMessageDialog(null,name , address, age);
         JOptionPane.showMessageDialog(null,password1);
+        System.err.println(gender);
 }
     
 }

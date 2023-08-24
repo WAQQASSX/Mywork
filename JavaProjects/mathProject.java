@@ -16,7 +16,7 @@ public static void main(String[] args) {
     double r = Math.round(14.4); // close to 
     double ci = Math.ceil(14.1);// take the bigger number 
     double f = Math.floor(14.9);// take the less number 
-    System.out.println();
+    System.out.println(f +ci + r+c+root+pw+ab+mn+mx);
 
 }
     

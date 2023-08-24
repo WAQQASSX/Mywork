@@ -1,6 +1,6 @@
 package JavaProjects;
 import java.util.Scanner;
-import javax.swing.JOptionPane;
+// import javax.swing.JOptionPane;
 public class BProject {
 public static void main(String[] args) {
     System.out.println("here I make small project to see how much I improved ");
@@ -16,6 +16,7 @@ class sum{
         int num2 = input.nextInt();
         int sum = num1 + num2 ;
         System.out.println(sum);
+        input.close();
  }
 
 
@@ -28,6 +29,7 @@ class reversingString {
        for(int i = rev.length();i>=1;i--){
         System.out.print(rev.charAt(i-1));
        }
+       input.close();
     }
 
 }

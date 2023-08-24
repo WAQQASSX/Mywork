@@ -1,6 +1,6 @@
 package JavaProjects;
 import javax.swing.JOptionPane;
-import java.util.Scanner;
+// import java.util.Scanner;
 /**
  * forloopsPrj
  */
@@ -17,7 +17,7 @@ public class forloopsPrj {
 }
 
 
- class whileloop{
+ class whileLoop{
     public static void main(String[] args) {
         int ticket = 1;
         while(ticket <= 10 ){
@@ -65,17 +65,4 @@ public static void main(String[] args) {
     System.out.println(J + ":" + girlsname[J]);
     }
 }
-}
-
-class test{
-    public static void main(String[] args) {
-        char x = '*'; char y = '*';
-        Scanner input = new Scanner(System.in);
-        int i = input.nextInt();
-        while(i<10){
-            System.out.println(x);
-
-        }
-    }
-
 }
