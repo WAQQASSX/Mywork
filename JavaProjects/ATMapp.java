@@ -72,7 +72,6 @@ int submoney = Integer.parseInt(JOptionPane.showInputDialog("How Much Money You 
     JOptionPane.showMessageDialog(null, "Please take you money " );
     JOptionPane.showMessageDialog(null, "you have this amount of money = " + data.credit1);
      anotPros n = new anotPros();
-
  }
 } 
 class statement{
