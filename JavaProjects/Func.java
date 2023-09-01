@@ -1,5 +1,7 @@
 package JavaProjects;
 import java.util.Scanner;
+import java.util.Random;
+import javax.swing.JOptionPane;
 public class Func{
 
 static void Calc(){
@@ -51,5 +53,6 @@ public static void main(String[] args) {
     Calc();
  
 }
+
 }
 
