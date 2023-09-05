@@ -1,0 +1,54 @@
+
+//	common comand 
+
+		whoami 
+		which
+		pwd
+		ls 
+		cp
+		dpk
+		cd
+		nano 
+		mv 
+		rm
+		rmdir
+		mkdir
+		ps 
+		uname 
+		hostname
+		id
+		ip 
+		ifconfig
+		netstat
+		ss
+		who 
+		env 
+		lsblk
+		lsusb
+		lsof
+		man  -h --help
+		apropos 
+		usermod (--shell) -l 
+		adduser 
+		useradd 
+		su (switch user)
+		sudo visudo (premison eidtor)
+		gruopadd
+		groups
+		gpasswd -d (to delete member from group)		
+		groupdel
+		userdel
+		apt  (sudo apt update  , sudo apt discord )
+			sudo apt list 
+			apt list --installed | grep ^appyou wnat
+			sudo apt show name of the app 
+			sudo apt remove 
+			sudo apt purge
+			sudo apt upgrade  && sudo apt full-upgrade
+			sudo aptitude
+		snap (another store) --classic pakage name 
+		pip    pip3 install -r reqrmentsfile 
+		git
+		ps -aux (task manager )
+		systemctl (it's used to contral the background tasks ) [we use with it ]= start  stop restart status reload reload-or-restart  {note = it's need sudo }
+		systemctl enable or disable (that will let the task to not work the next time you boot the system  )

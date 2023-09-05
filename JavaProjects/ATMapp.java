@@ -74,11 +74,11 @@ int submoney = Integer.parseInt(JOptionPane.showInputDialog("How Much Money You 
      anotPros n = new anotPros();
  }
 } 
-class statement{
-         database data = new database();
-statement(){
-    JOptionPane.showMessageDialog(null, " your Credit is : " + data.credit1);
-     anotPros n = new anotPros();
+class statement{     
+  static void statement(){
+        database data = new database();
+        JOptionPane.showMessageDialog(null, " your Credit is : " + data.credit1);
+        anotPros n = new anotPros();
 }
 }
 class anotPros {
