@@ -30,11 +30,10 @@ public class GuessGame{
         continue;
     }else if (yorN.equals("n")){
         break;
-    }else{
+    } else {
         JOptionPane.showMessageDialog(null, "Invalid data");
         break;
     }
 }
-
 }
 }

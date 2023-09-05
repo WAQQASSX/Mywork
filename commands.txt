@@ -10,7 +10,7 @@
 		cd
 		nano 
 		mv 
-		rm
+		rm   (-r to remove a non-empty dir )
 		rmdir
 		mkdir
 		ps 
