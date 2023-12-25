@@ -4,6 +4,7 @@ public class new1 {
  public static void main(String[] args) {
     String greating = "Hello World !";
     System.out.println(greating);
+    // arrray 
     String[] mylist = {"waqqas","AAidah","wahab","farah","zahraa"};
     System.out.println(mylist[0]);
     try{

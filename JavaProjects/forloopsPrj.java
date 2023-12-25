@@ -33,7 +33,7 @@ public class forloopsPrj {
             }else {
                 JOptionPane.showMessageDialog(null, "invilded data ");
             }
-        if(ticket == 0 ){
+        if(ticket == 10 ){
             System.out.println("all the tiket has resaved ");
         }
         
@@ -51,7 +51,7 @@ public static void main(String[] args) {
     do{
         System.out.println(i + ":"+ilv);
         i++;
-    }while(i<=10);
+    }while(i>=10);
 }
     
 }

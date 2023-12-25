@@ -11,17 +11,21 @@ public static void main(String[] args) {
 } 
 }
     
+class trys {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+    try {
+        System.out.println("Enter your age  : ");
+        int age = input.nextInt();
+        System.out.println("ur age is  :" + age );
+    }catch(Exception erorr ){
+        System.out.println("try again");
+        System.out.println("Enter your name :");
+        input.nextLine();
+        String name = input.nextLine();
+        System.out.println("ur name is :"+name);
+    }
+    System.out.println("bye");
+    }
 
-// Scanner input = new Scanner(System.in);
-    // try {
-    //     System.out.println("Enter your number : ");
-    //     int age = input.nextInt();
-    //     System.out.println("ur age is  :" + age );
-    // }catch(Exception erorr ){
-    //     System.out.println("try again");
-    //     System.out.println("Enter your name :");
-    //     input.nextLine();
-    //     String name = input.nextLine();
-    //     System.out.println("ur name is :"+name);
-    // }
-    // System.out.println("bye");
+}
