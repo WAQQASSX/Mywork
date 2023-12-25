@@ -12,9 +12,12 @@ public class GuessGame{
     JOptionPane.showMessageDialog(null,"Please Guess The Number from 1 to 10 ");
     int Gnum = Integer.parseInt(JOptionPane.showInputDialog("Please Guess the number "));
     while(true){
+        //  check if  the number client guess is equal to the random number  
     if(Gnum == rn ){
         JOptionPane.showMessageDialog(null, " win ");
         break;
+                //  check if  the number client guess is equal to the random number  
+
     }else if(Gnum > rn){
         JOptionPane.showMessageDialog(null,"lower ");
         Gnum = Integer.parseInt(JOptionPane.showInputDialog("Please Guess the number "));
