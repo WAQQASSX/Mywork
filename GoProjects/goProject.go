@@ -8,7 +8,7 @@ func main() {
 	fmt.Println("hello world")
 	name := "waqqas"
 	if name == "waqqas" {
-		return name
+		return
 	} else {
 		return
 	}

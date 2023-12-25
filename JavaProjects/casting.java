@@ -50,6 +50,6 @@ class stringsmed{
 
         System.out.println(x);
         F150 car = new F150();
-       
+       System.out.println(car.color);
     }
 }
