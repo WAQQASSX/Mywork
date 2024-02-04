@@ -9,6 +9,8 @@ public class BiscGUIinJava {
         // To use intagers in jopationpane , we should casting it using the following 
         int age = Integer.parseInt(JOptionPane.showInputDialog("how old are you;"));
         System.out.println("\nYou Are " +age+ " Years Old.");
+        boolean Risdent = Boolean.parseBoolean(JOptionPane.showInputDialog("are you Risdent T or F "));
+        System.out.println(Risdent);
     }
     
 }
