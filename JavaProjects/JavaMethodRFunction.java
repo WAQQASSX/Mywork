@@ -78,3 +78,21 @@ public class JavaMethodRFunction {
     
     
 }
+
+
+class JavaOverLoadMethod{
+    public static void main(String[] args){
+        System.out.println(add(4,5));
+        System.out.println(add(9,3,7));
+    }
+    //calc 
+    static int add(int x , int y){
+
+        return x+y ;
+    }
+
+    static int add(int x , int y , int z){
+
+        return x+y+z;
+    }
+}
